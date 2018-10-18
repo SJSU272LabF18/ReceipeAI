@@ -6,6 +6,8 @@ Gaurav Sharma\
 Nivetha Jayakumar\
 Sajan Patel
 
+## Team Name: Eleven
+
 ## Project Ideas
 
 ### Idea 1: Speech driven self-driving car simulator
