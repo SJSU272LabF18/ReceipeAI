@@ -41,4 +41,4 @@ __Methodology:__
 - Python
 - Scikit
 - Numpy
-- Sql, CockroachDB, Hadoop/
+- Sql, CockroachDB, Hadoop
