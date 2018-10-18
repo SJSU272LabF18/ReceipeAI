@@ -19,6 +19,24 @@ __Methodology__
 - Use Udacity's Self Driving Car simulator in Python to create a self driving car and a simulated environment 
 - Use Google Maps API to set routes and get ETA estimates 
 
-### Idea 2:
+### Idea 2: Apple Watch OCD/Habit Helper
 
-### Idea 3:
+__Project Description:__
+
+OCD/health app using machine learning and Apple Watch/health tracker to figure out when the person was repeatedly doing a task to then have the app learn their habits and help them. This would use motion tracking to look for fidgeting and pattern movements. Also need to include ways to help a person with OCD to curb their habit. 
+
+__Methodology:__
+- Swift 
+- Core Motion library
+- Cloud based
+- SQL, Hadoop, CockroachDB
+
+### Idea 3: Recipe AI
+
+__Project Description:__ Use image processing to capture images of ingredients and come up with recipes. This project consists of using a camera to capture images of ingredients, image processing to determine the ingredient, and filtering through recipes to find the closest matching for the user. To save recipes we can create a database for future referencing along with user accounts.
+
+__Methodology:__
+- Python
+- Scikit
+- Numpy
+- Sql, CockroachDB, Hadoop/
