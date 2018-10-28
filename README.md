@@ -33,7 +33,7 @@ __Methodology:__
 - Cloud based
 - SQL, Hadoop, CockroachDB
 
-### Idea 3: Recipe AI
+### Idea 3: Recipe AI  - APPROVED
 
 __Project Description:__
 
