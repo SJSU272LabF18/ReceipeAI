@@ -8,7 +8,7 @@ Sajan Patel
 
 ## Team Name: Eleven
 
-## Proejct Idea: Recipe AI  - APPROVED
+## Project Idea: Recipe AI  - APPROVED
 
 __Project Description:__
 
