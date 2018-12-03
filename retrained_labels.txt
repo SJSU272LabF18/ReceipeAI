@@ -1,0 +1,21 @@
+avocado
+bellpepper
+broccoli
+cabbage
+carrot
+cauliflower
+celery
+corn
+cucumber
+eggplant
+garlic
+ginger
+green beans
+kale
+lettuce
+onion
+peas
+potato
+pumpkin
+spinach
+tomato
