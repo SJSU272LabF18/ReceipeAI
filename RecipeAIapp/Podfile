@@ -9,6 +9,7 @@ target 'RecipeAIapp' do
 
   pod 'Firebase/Core'
 
+  
   target 'RecipeAIappTests' do
     inherit! :search_paths
     # Pods for testing

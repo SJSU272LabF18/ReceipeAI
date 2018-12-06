@@ -17,6 +17,7 @@
 		E60964F321B7514600BFCBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60964F121B7514600BFCBA6 /* LaunchScreen.storyboard */; };
 		E60964FE21B7514700BFCBA6 /* RecipeAIappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60964FD21B7514700BFCBA6 /* RecipeAIappTests.swift */; };
 		E609650921B7514700BFCBA6 /* RecipeAIappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609650821B7514700BFCBA6 /* RecipeAIappUITests.swift */; };
+		E60A0CC621B8C07A00B08613 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */; };
 		E63F3C5221B75CAA0050F028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		E609650421B7514700BFCBA6 /* RecipeAIappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAIappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609650821B7514700BFCBA6 /* RecipeAIappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAIappUITests.swift; sourceTree = "<group>"; };
 		E609650A21B7514700BFCBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6E8E88ADA23934B638A46D7 /* Pods_RecipeAIappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeAIappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 			children = (
 				E60964E821B7514400BFCBA6 /* AppDelegate.swift */,
 				E60964EA21B7514400BFCBA6 /* ViewController.swift */,
+				E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */,
 				E60964EC21B7514400BFCBA6 /* Main.storyboard */,
 				E60964EF21B7514600BFCBA6 /* Assets.xcassets */,
 				E60964F121B7514600BFCBA6 /* LaunchScreen.storyboard */,
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60A0CC621B8C07A00B08613 /* FrameExtractor.swift in Sources */,
 				E60964EB21B7514400BFCBA6 /* ViewController.swift in Sources */,
 				E60964E921B7514400BFCBA6 /* AppDelegate.swift in Sources */,
 			);
