@@ -13,6 +13,7 @@ target 'RecipeAIapp' do
   
   # If using the on-device API:
   pod 'Firebase/MLVisionLabelModel'
+  pod 'Firebase/MLModelInterpreter'
   
   target 'RecipeAIappTests' do
     inherit! :search_paths

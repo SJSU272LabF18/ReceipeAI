@@ -223,6 +223,10 @@ Copyright 2018 Google
 
 Copyright 2018 Google
 
+## FirebaseMLModelInterpreter
+
+Copyright 2018 Google
+
 ## FirebaseMLVision
 
 Copyright 2018 Google
@@ -1098,6 +1102,10 @@ of the input file used when generating it.  This code is not
 standalone and requires a support library to be linked with it.  This
 support library is itself covered by the above license.
 
+
+## TensorFlowLite
+
+Apache 2
 
 ## nanopb
 

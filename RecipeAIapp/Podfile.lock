@@ -4,6 +4,9 @@ PODS:
     - FirebaseAnalytics (= 5.3.0)
   - Firebase/CoreOnly (5.13.0):
     - FirebaseCore (= 5.1.8)
+  - Firebase/MLModelInterpreter (5.13.0):
+    - Firebase/CoreOnly
+    - FirebaseMLModelInterpreter (= 0.13.0)
   - Firebase/MLVision (5.13.0):
     - Firebase/CoreOnly
     - FirebaseMLVision (= 0.13.0)
@@ -27,6 +30,12 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 5.3)
   - FirebaseMLCommon (0.13.0):
     - FirebaseCore (~> 5.1)
+  - FirebaseMLModelInterpreter (0.13.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - FirebaseMLCommon (~> 0.13)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - TensorFlowLite (= 1.10.1)
   - FirebaseMLVision (0.13.0):
     - FirebaseCore (~> 5.1)
     - FirebaseMLCommon (~> 0.13)
@@ -87,9 +96,11 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - TensorFlowLite (1.10.1)
 
 DEPENDENCIES:
   - Firebase/Core
+  - Firebase/MLModelInterpreter
   - Firebase/MLVision
   - Firebase/MLVisionLabelModel
 
@@ -100,6 +111,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseInstanceID
     - FirebaseMLCommon
+    - FirebaseMLModelInterpreter
     - FirebaseMLVision
     - FirebaseMLVisionLabelModel
     - GoogleAPIClientForREST
@@ -110,6 +122,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - Protobuf
+    - TensorFlowLite
 
 SPEC CHECKSUMS:
   Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
@@ -117,6 +130,7 @@ SPEC CHECKSUMS:
   FirebaseCore: fba2bfaa691c49028309b92e4dd37cc4b5512fbe
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FirebaseMLCommon: 5e1bc4c4aa1d12c1f6bc38b40d2d60e8e63466bb
+  FirebaseMLModelInterpreter: 6280b7834357d52df9a260fc701e55479c23eae0
   FirebaseMLVision: eba288c56228b25d9be498861ad0b9f305e8ce5c
   FirebaseMLVisionLabelModel: 2437257cfcb84cab14ca285866b12f7acc50095b
   GoogleAPIClientForREST: 825503f12cb5824601cf526cf06d81a1cea4afd9
@@ -127,7 +141,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  TensorFlowLite: 6274f29bbf7e234edb3108f0f32728b5a4d53d77
 
-PODFILE CHECKSUM: 8940f33f6717b26b4edbd425d3ae80fac63548b3
+PODFILE CHECKSUM: a1ed625acf980bfec3e79f5d6bd499e826904699
 
 COCOAPODS: 1.5.3
