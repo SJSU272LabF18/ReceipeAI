@@ -57,20 +57,30 @@
             </objects>
             <point key="canvasLocation" x="2088.8000000000002" y="361.16941529235385"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe View Controller-->
         <scene sceneID="S1q-AS-nGf">
             <objects>
-                <viewController id="Qba-xd-5IK" sceneMemberID="viewController">
+                <viewController id="Qba-xd-5IK" customClass="RecipeViewController" customModule="RecipeAIapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Nm-uX-Vj1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-iF-WZY">
+                                <rect key="frame" x="16" y="64" width="343" height="524"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YdB-Sa-Wbi"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Cnl-iF-WZY" id="Uf1-PW-1mz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Se-b4-AYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3384" y="849"/>
+            <point key="canvasLocation" x="3384.8000000000002" y="834.33283358320841"/>
         </scene>
         <!--Photo Lib View Controller-->
         <scene sceneID="v6Z-t2-7ax">
@@ -104,7 +114,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Qba-xd-5IK" kind="show" id="Ruo-79-60i"/>
+                                    <action selector="getRecipe:" destination="tc9-ud-6BW" eventType="touchUpInside" id="lbv-G8-6JA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CR-i8-xNy">
@@ -121,6 +131,7 @@
                     <connections>
                         <outlet property="ResultLbl" destination="4CR-i8-xNy" id="BhZ-L9-WO8"/>
                         <outlet property="imageDisplay" destination="xL0-g7-JSR" id="pvB-W1-1QX"/>
+                        <segue destination="Qba-xd-5IK" kind="show" identifier="searchRecipe" id="oEe-DS-8pp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHt-h4-3I4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,6 +197,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nz5-MN-QFi"/>
-        <segue reference="Ruo-79-60i"/>
+        <segue reference="oEe-DS-8pp"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -20,6 +20,8 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var imageDisplay: UIImageView!
     @IBOutlet weak var ResultLbl: UILabel!
     
+    var querySearch = ""
+    
     // models
     var interpreter: ModelInterpreter!
     var labels: [String]!
@@ -126,6 +128,16 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func getRecipe(_ sender: Any) {
+        querySearch = ResultLbl.text!
+        performSegue(withIdentifier: "searchRecipe", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! RecipeViewController
+        vc.recipeQuery = self.querySearch
+    }
     /*
      // MARK: - Navigation
      
