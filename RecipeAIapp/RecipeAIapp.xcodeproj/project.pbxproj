@@ -18,6 +18,7 @@
 		E60964FE21B7514700BFCBA6 /* RecipeAIappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60964FD21B7514700BFCBA6 /* RecipeAIappTests.swift */; };
 		E609650921B7514700BFCBA6 /* RecipeAIappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609650821B7514700BFCBA6 /* RecipeAIappUITests.swift */; };
 		E60A0CC621B8C07A00B08613 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */; };
+		E60A0CC821B8C26500B08613 /* PhotoLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A0CC721B8C26500B08613 /* PhotoLibViewController.swift */; };
 		E63F3C5221B75CAA0050F028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		E609650821B7514700BFCBA6 /* RecipeAIappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAIappUITests.swift; sourceTree = "<group>"; };
 		E609650A21B7514700BFCBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		E60A0CC721B8C26500B08613 /* PhotoLibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibViewController.swift; sourceTree = "<group>"; };
 		E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6E8E88ADA23934B638A46D7 /* Pods_RecipeAIappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeAIappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				E60964F121B7514600BFCBA6 /* LaunchScreen.storyboard */,
 				E60964F421B7514600BFCBA6 /* Info.plist */,
 				E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */,
+				E60A0CC721B8C26500B08613 /* PhotoLibViewController.swift */,
 			);
 			path = RecipeAIapp;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				E60A0CC621B8C07A00B08613 /* FrameExtractor.swift in Sources */,
 				E60964EB21B7514400BFCBA6 /* ViewController.swift in Sources */,
 				E60964E921B7514400BFCBA6 /* AppDelegate.swift in Sources */,
+				E60A0CC821B8C26500B08613 /* PhotoLibViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
