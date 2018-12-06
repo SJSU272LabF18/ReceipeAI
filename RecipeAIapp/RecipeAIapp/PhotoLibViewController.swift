@@ -9,7 +9,7 @@
 
 import UIKit
 import Firebase
-//import FirebaseMLModelInterpreter
+import FirebaseMLModelInterpreter
 
 class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
