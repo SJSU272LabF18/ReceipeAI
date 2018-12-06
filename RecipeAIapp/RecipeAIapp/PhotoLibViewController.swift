@@ -43,7 +43,7 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
             updateConditions: conditions
         )
         _ = ModelManager.modelManager().register(cloudModelSource)
-        
+ 
         
         //Local Modeling
         guard let modelPath = Bundle.main.path(forResource: "graph", ofType: "tflite") else {
