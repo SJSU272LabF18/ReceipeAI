@@ -19,6 +19,7 @@
 		E609650921B7514700BFCBA6 /* RecipeAIappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609650821B7514700BFCBA6 /* RecipeAIappUITests.swift */; };
 		E60A0CC621B8C07A00B08613 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */; };
 		E60A0CC821B8C26500B08613 /* PhotoLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60A0CC721B8C26500B08613 /* PhotoLibViewController.swift */; };
+		E61517B221B90211002B0847 /* graph.tflite in Resources */ = {isa = PBXBuildFile; fileRef = E61517B121B90211002B0847 /* graph.tflite */; };
 		E63F3C5221B75CAA0050F028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		E609650A21B7514700BFCBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		E60A0CC721B8C26500B08613 /* PhotoLibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibViewController.swift; sourceTree = "<group>"; };
+		E61517B121B90211002B0847 /* graph.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = graph.tflite; path = ../../graph.tflite; sourceTree = "<group>"; };
 		E63F3C5121B75CAA0050F028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6E8E88ADA23934B638A46D7 /* Pods_RecipeAIappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeAIappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 		E60964E721B7514400BFCBA6 /* RecipeAIapp */ = {
 			isa = PBXGroup;
 			children = (
+				E61517B121B90211002B0847 /* graph.tflite */,
 				E60964E821B7514400BFCBA6 /* AppDelegate.swift */,
 				E60964EA21B7514400BFCBA6 /* ViewController.swift */,
 				E60A0CC521B8C07A00B08613 /* FrameExtractor.swift */,
@@ -285,6 +288,7 @@
 				E60964F321B7514600BFCBA6 /* LaunchScreen.storyboard in Resources */,
 				E63F3C5221B75CAA0050F028 /* GoogleService-Info.plist in Resources */,
 				E60964F021B7514600BFCBA6 /* Assets.xcassets in Resources */,
+				E61517B221B90211002B0847 /* graph.tflite in Resources */,
 				E60964EE21B7514400BFCBA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

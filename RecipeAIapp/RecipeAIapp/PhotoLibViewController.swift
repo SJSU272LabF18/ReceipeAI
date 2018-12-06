@@ -7,8 +7,11 @@
 //  Copyright © 2018 Sajan. All rights reserved.
 //
 
+
 import UIKit
+import AVKit
 import Firebase
+import FirebaseMLVision
 import FirebaseMLModelInterpreter
 
 class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
@@ -46,8 +49,9 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
         guard let modelPath = Bundle.main.path(forResource: "graph", ofType: "tflite") else {
             return
         }
-        let localModelSource = LocalModelSource(modelName: "graph",
-                                                path: modelPath)
+        let localModelSource = LocalModelSource(modelName: "graph", path: modelPath)
+        
+        
         ModelManager.modelManager().register(localModelSource)
         
         let options = ModelOptions(
@@ -71,11 +75,8 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
-        
         imagePickerController.sourceType = .photoLibrary
         self.present(imagePickerController, animated: true, completion: nil)
-        
-        
     }
     
     
@@ -96,8 +97,7 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
     
     func LookUp() {
         
-        let vision = Vision.vision() // ML vision api instance this return object labels
-        
+        let vision = Vision.vision() 
         let labelDetectorObj = vision.labelDetector()
         let visionImageObj = VisionImage(image: img)
         
@@ -115,14 +115,10 @@ class PhotoLibViewController: UIViewController, UIImagePickerControllerDelegate,
             
             for label in labels! {
                 print("\(label.label) has confidence \(label.confidence)")
-                //self.ResultLbl.text = predictionLabel?.label
+                self.ResultLbl.text = predictionLabel?.label
             }
         }
     }
-    
-    
-    
-    
     
     
     override func didReceiveMemoryWarning() {

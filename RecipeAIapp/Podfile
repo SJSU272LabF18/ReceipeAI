@@ -9,9 +9,6 @@ target 'RecipeAIapp' do
 
   pod 'Firebase/Core'
   pod 'Firebase/MLVision'
-  
-  
-  # If using the on-device API:
   pod 'Firebase/MLVisionLabelModel'
   pod 'Firebase/MLModelInterpreter'
   
