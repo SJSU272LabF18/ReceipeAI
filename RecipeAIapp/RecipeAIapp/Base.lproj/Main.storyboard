@@ -70,12 +70,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av6-Qb-C7Z">
+                                <rect key="frame" x="16" y="481" width="343" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YdB-Sa-Wbi"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Cnl-iF-WZY" id="Uf1-PW-1mz"/>
+                        <outlet property="recipeLabel" destination="av6-Qb-C7Z" id="w0Q-Bj-euJ"/>
+                        <outlet property="tableView" destination="Cnl-iF-WZY" id="13G-2r-e4h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Se-b4-AYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +176,10 @@
                                     <segue destination="cgF-op-1zW" kind="show" id="hBY-8W-Z6P"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-15 at 1.24.49 PM" translatesAutoresizingMaskIntoConstraints="NO" id="uSp-sH-a66">
+                                <rect key="frame" x="-5" y="64" width="380" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e9G-kV-Ssm"/>
@@ -195,8 +207,11 @@
             <point key="canvasLocation" x="-25" y="876"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2018-11-15 at 1.24.49 PM" width="419" height="661"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nz5-MN-QFi"/>
+        <segue reference="VWh-to-hjs"/>
         <segue reference="oEe-DS-8pp"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,6 +11,7 @@ import UIKit
 class RecipeViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var recipeLabel: UILabel!
     struct Recipes: Decodable {
         let recipe_id : String
     }
@@ -30,7 +31,7 @@ class RecipeViewController: UIViewController, UITableViewDataSource {
     
     var API_KEY = "cda576c5540698abd22f332642c03323"
     //query is loaded with whatever comes from segue
-    var query = "eggs,bellpeppers,tomatoes,salt"
+    var query = "bellpeppers,tomatoes"
     var recipe_id_value = ""
     var url = ""
     var recipeQuery = ""
@@ -45,6 +46,8 @@ class RecipeViewController: UIViewController, UITableViewDataSource {
         
         //query = recipeQuery
         queryDatabase()
+        
+        //self.tableView.reloadData()
     }
     
     func queryDatabase(){
@@ -86,6 +89,7 @@ class RecipeViewController: UIViewController, UITableViewDataSource {
                 for elem in self.ingredients { print(elem) }
                 self.url = response.recipe.source_url
                 print(self.url)
+                
             } catch let parsingError {
                 print("Error", parsingError)
             }
@@ -102,14 +106,13 @@ class RecipeViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-        if cell == nil{
-            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
-        }
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         
         
-        return cell!
+        cell.textLabel?.text = ingredients[indexPath.row]
+        
+        return cell
     }
     
     
